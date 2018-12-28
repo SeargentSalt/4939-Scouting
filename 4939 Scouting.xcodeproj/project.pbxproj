@@ -11,10 +11,11 @@
 		2D77738121D4771C00DB60A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D77738021D4771C00DB60A2 /* ViewController.swift */; };
 		2D77738421D4771C00DB60A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D77738221D4771C00DB60A2 /* Main.storyboard */; };
 		2D77738721D4771C00DB60A2 /* _939_Scouting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D77738521D4771C00DB60A2 /* _939_Scouting.xcdatamodeld */; };
-		2D77738921D4771E00DB60A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D77738821D4771E00DB60A2 /* Assets.xcassets */; };
 		2D77738C21D4771E00DB60A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D77738A21D4771E00DB60A2 /* LaunchScreen.storyboard */; };
 		2D77739721D4771E00DB60A2 /* _939_ScoutingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D77739621D4771E00DB60A2 /* _939_ScoutingTests.swift */; };
 		2D7773A221D4771E00DB60A2 /* _939_ScoutingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7773A121D4771E00DB60A2 /* _939_ScoutingUITests.swift */; };
+		2D7773B021D4795200DB60A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7773AF21D4795200DB60A2 /* Assets.xcassets */; };
+		2D7773B721D47FF700DB60A2 /* ScoutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7773B621D47FF700DB60A2 /* ScoutingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		2D77738021D4771C00DB60A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D77738321D4771C00DB60A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D77738621D4771C00DB60A2 /* _939_Scouting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _939_Scouting.xcdatamodel; sourceTree = "<group>"; };
-		2D77738821D4771E00DB60A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D77738B21D4771E00DB60A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D77738D21D4771E00DB60A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D77739221D4771E00DB60A2 /* 4939 ScoutingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "4939 ScoutingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +49,8 @@
 		2D77739D21D4771E00DB60A2 /* 4939 ScoutingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "4939 ScoutingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7773A121D4771E00DB60A2 /* _939_ScoutingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _939_ScoutingUITests.swift; sourceTree = "<group>"; };
 		2D7773A321D4771E00DB60A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7773AF21D4795200DB60A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		2D7773B621D47FF700DB60A2 /* ScoutingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +101,11 @@
 		2D77737D21D4771C00DB60A2 /* 4939 Scouting */ = {
 			isa = PBXGroup;
 			children = (
+				2D7773B321D47F4500DB60A2 /* Controller */,
+				2D7773B221D47F3E00DB60A2 /* View */,
+				2D7773B121D47F3800DB60A2 /* Model */,
 				2D77737E21D4771C00DB60A2 /* AppDelegate.swift */,
-				2D77738021D4771C00DB60A2 /* ViewController.swift */,
-				2D77738221D4771C00DB60A2 /* Main.storyboard */,
-				2D77738821D4771E00DB60A2 /* Assets.xcassets */,
-				2D77738A21D4771E00DB60A2 /* LaunchScreen.storyboard */,
+				2D7773AF21D4795200DB60A2 /* Assets.xcassets */,
 				2D77738D21D4771E00DB60A2 /* Info.plist */,
 				2D77738521D4771C00DB60A2 /* _939_Scouting.xcdatamodeld */,
 			);
@@ -126,6 +128,31 @@
 				2D7773A321D4771E00DB60A2 /* Info.plist */,
 			);
 			path = "4939 ScoutingUITests";
+			sourceTree = "<group>";
+		};
+		2D7773B121D47F3800DB60A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D7773B221D47F3E00DB60A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D77738A21D4771E00DB60A2 /* LaunchScreen.storyboard */,
+				2D77738221D4771C00DB60A2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D7773B321D47F4500DB60A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D77738021D4771C00DB60A2 /* ViewController.swift */,
+				2D7773B621D47FF700DB60A2 /* ScoutingViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D77738C21D4771E00DB60A2 /* LaunchScreen.storyboard in Resources */,
-				2D77738921D4771E00DB60A2 /* Assets.xcassets in Resources */,
+				2D7773B021D4795200DB60A2 /* Assets.xcassets in Resources */,
 				2D77738421D4771C00DB60A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +288,7 @@
 			files = (
 				2D77738721D4771C00DB60A2 /* _939_Scouting.xcdatamodeld in Sources */,
 				2D77738121D4771C00DB60A2 /* ViewController.swift in Sources */,
+				2D7773B721D47FF700DB60A2 /* ScoutingViewController.swift in Sources */,
 				2D77737F21D4771C00DB60A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
