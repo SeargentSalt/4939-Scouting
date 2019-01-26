@@ -1,0 +1,6 @@
+framework module Pods_4939_Scouting {
+  umbrella header "Pods-4939 Scouting-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,10 +7,27 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ScoutingViewController: UIViewController {
-
+    
+    var scoutingData: ScoutingInfo?
+    
+    @IBOutlet weak var schoolTextFeild: UITextField!
+    @IBAction func submitButton(_ sender: Any) {
+        ref = Database.database().reference()
+        
+        if (schoolTextFeild.text != "") {
+            ref?.child("list").childByAutoId().setValue(schoolTextFeild.text)
+            schoolTextFeild.text = ""
+        }
+        
+    }
+    
+    var ref: DatabaseReference?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(scoutingData!)
     }
 }
