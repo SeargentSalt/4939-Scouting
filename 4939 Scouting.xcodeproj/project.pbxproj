@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E226B8822219F8F0013FED4 /* CycleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B8722219F8F0013FED4 /* CycleTableViewController.swift */; };
+		1E226B8A22247F4B0013FED4 /* CycleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B8922247F4B0013FED4 /* CycleInfo.swift */; };
+		1E226B8C2224867D0013FED4 /* BeginningLocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B8B2224867C0013FED4 /* BeginningLocationInfo.swift */; };
+		1E226B8E222488770013FED4 /* SandstormInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B8D222488770013FED4 /* SandstormInfo.swift */; };
+		1E226B902224891A0013FED4 /* EndGameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B8F2224891A0013FED4 /* EndGameInfo.swift */; };
+		1E226B9222248A140013FED4 /* CapabilitiesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B9122248A140013FED4 /* CapabilitiesInfo.swift */; };
+		1E226B9422248B470013FED4 /* SubmitInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B9322248B470013FED4 /* SubmitInfo.swift */; };
+		1E226B96222495C90013FED4 /* GetSendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E226B95222495C90013FED4 /* GetSendData.swift */; };
 		2D2A33A021DE989A000C025B /* HiddenPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A339F21DE989A000C025B /* HiddenPageViewController.swift */; };
 		2D732FD021DD45E00029AF16 /* DisplayPicturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D732FCF21DD45E00029AF16 /* DisplayPicturesCell.swift */; };
 		2D732FD221DD51EF0029AF16 /* ScoutingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D732FD121DD51EF0029AF16 /* ScoutingInfo.swift */; };
@@ -52,6 +60,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E226B8722219F8F0013FED4 /* CycleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleTableViewController.swift; sourceTree = "<group>"; };
+		1E226B8922247F4B0013FED4 /* CycleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleInfo.swift; sourceTree = "<group>"; };
+		1E226B8B2224867C0013FED4 /* BeginningLocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningLocationInfo.swift; sourceTree = "<group>"; };
+		1E226B8D222488770013FED4 /* SandstormInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandstormInfo.swift; sourceTree = "<group>"; };
+		1E226B8F2224891A0013FED4 /* EndGameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameInfo.swift; sourceTree = "<group>"; };
+		1E226B9122248A140013FED4 /* CapabilitiesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapabilitiesInfo.swift; sourceTree = "<group>"; };
+		1E226B9322248B470013FED4 /* SubmitInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitInfo.swift; sourceTree = "<group>"; };
+		1E226B95222495C90013FED4 /* GetSendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSendData.swift; sourceTree = "<group>"; };
 		2D2A339F21DE989A000C025B /* HiddenPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenPageViewController.swift; sourceTree = "<group>"; };
 		2D732FCF21DD45E00029AF16 /* DisplayPicturesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPicturesCell.swift; sourceTree = "<group>"; };
 		2D732FD121DD51EF0029AF16 /* ScoutingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutingInfo.swift; sourceTree = "<group>"; };
@@ -180,6 +196,13 @@
 				2DE52B6B21DBF6840073DFB6 /* Ranks.swift */,
 				2D732FD121DD51EF0029AF16 /* ScoutingInfo.swift */,
 				2D732FD321DD62590029AF16 /* RanksInfo.swift */,
+				1E226B8B2224867C0013FED4 /* BeginningLocationInfo.swift */,
+				1E226B8D222488770013FED4 /* SandstormInfo.swift */,
+				1E226B8922247F4B0013FED4 /* CycleInfo.swift */,
+				1E226B8F2224891A0013FED4 /* EndGameInfo.swift */,
+				1E226B9122248A140013FED4 /* CapabilitiesInfo.swift */,
+				1E226B9322248B470013FED4 /* SubmitInfo.swift */,
+				1E226B95222495C90013FED4 /* GetSendData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,9 +224,10 @@
 				2DEABAD621DC6B0E0084C120 /* EventsViewController.swift */,
 				2DE52B6D21DBF8ED0073DFB6 /* RanksViewController.swift */,
 				2DEABADD21DC73B20084C120 /* SchoolsViewController.swift */,
-				2D732FD521DD657E0029AF16 /* MatchPreformanceTableViewController.swift */,
 				2D7773B621D47FF700DB60A2 /* ScoutingViewController.swift */,
 				2D2A339F21DE989A000C025B /* HiddenPageViewController.swift */,
+				2D732FD521DD657E0029AF16 /* MatchPreformanceTableViewController.swift */,
+				1E226B8722219F8F0013FED4 /* CycleTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,15 +403,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-4939 ScoutingUITests-checkManifestLockResult.txt",
 			);
@@ -401,8 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-4939 Scouting/Pods-4939 Scouting-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -410,8 +428,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -427,15 +443,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-4939 Scouting-checkManifestLockResult.txt",
 			);
@@ -449,15 +461,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-4939 ScoutingTests-checkManifestLockResult.txt",
 			);
@@ -476,15 +484,23 @@
 				2D77738721D4771C00DB60A2 /* _939_Scouting.xcdatamodeld in Sources */,
 				2D2A33A021DE989A000C025B /* HiddenPageViewController.swift in Sources */,
 				2D732FD421DD62590029AF16 /* RanksInfo.swift in Sources */,
+				1E226B9222248A140013FED4 /* CapabilitiesInfo.swift in Sources */,
 				2D732FD021DD45E00029AF16 /* DisplayPicturesCell.swift in Sources */,
 				2DEABAD721DC6B0E0084C120 /* EventsViewController.swift in Sources */,
 				2DE52B6C21DBF6840073DFB6 /* Ranks.swift in Sources */,
+				1E226B96222495C90013FED4 /* GetSendData.swift in Sources */,
+				1E226B8A22247F4B0013FED4 /* CycleInfo.swift in Sources */,
 				2D77738121D4771C00DB60A2 /* ViewController.swift in Sources */,
+				1E226B8C2224867D0013FED4 /* BeginningLocationInfo.swift in Sources */,
+				1E226B8E222488770013FED4 /* SandstormInfo.swift in Sources */,
+				1E226B902224891A0013FED4 /* EndGameInfo.swift in Sources */,
 				2D732FD621DD657E0029AF16 /* MatchPreformanceTableViewController.swift in Sources */,
 				2DE52B6E21DBF8ED0073DFB6 /* RanksViewController.swift in Sources */,
+				1E226B9422248B470013FED4 /* SubmitInfo.swift in Sources */,
 				2D732FD221DD51EF0029AF16 /* ScoutingInfo.swift in Sources */,
 				2D7773B721D47FF700DB60A2 /* ScoutingViewController.swift in Sources */,
 				2D77737F21D4771C00DB60A2 /* AppDelegate.swift in Sources */,
+				1E226B8822219F8F0013FED4 /* CycleTableViewController.swift in Sources */,
 				2DEABADA21DC6DA50084C120 /* EventsCell.swift in Sources */,
 				2DE52B6A21DBF54C0073DFB6 /* RanksCellController.swift in Sources */,
 				2DEABADE21DC73B20084C120 /* SchoolsViewController.swift in Sources */,
@@ -667,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLZ838BCHK;
 				INFOPLIST_FILE = "4939 Scouting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,6 +703,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLZ838BCHK;
 				INFOPLIST_FILE = "4939 Scouting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -706,6 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLZ838BCHK;
 				INFOPLIST_FILE = "4939 ScoutingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,6 +747,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLZ838BCHK;
 				INFOPLIST_FILE = "4939 ScoutingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -749,6 +769,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLZ838BCHK;
 				INFOPLIST_FILE = "4939 ScoutingUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -770,6 +791,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLZ838BCHK;
 				INFOPLIST_FILE = "4939 ScoutingUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
