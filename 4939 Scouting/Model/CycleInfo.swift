@@ -9,6 +9,7 @@
 import Foundation
 
 class CycleInfo {
+    var time: Int
     var hatch: Bool
     var cargo: Bool
     var cargoShip: Bool
@@ -18,7 +19,8 @@ class CycleInfo {
     var levelThree: Bool
     var successful: Bool
     
-    init(hatch: Bool, cargo: Bool, cargoShip: Bool, rocketShip: Bool, levelOne: Bool, levelTwo: Bool, levelThree: Bool, successful: Bool) {
+    init(hatch: Bool, cargo: Bool, cargoShip: Bool, rocketShip: Bool, levelOne: Bool, levelTwo: Bool, levelThree: Bool, successful: Bool, time: Int) {
+        self.time = time
         self.hatch = hatch
         self.cargo = cargo
         self.cargoShip = cargoShip

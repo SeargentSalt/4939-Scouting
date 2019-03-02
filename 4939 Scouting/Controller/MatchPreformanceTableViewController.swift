@@ -53,16 +53,20 @@ class MatchPreformanceTableViewController: UITableViewController {
     var cycles: [CycleInfo] = []
     var beginningLocationInfo: BeginningLocationInfo = BeginningLocationInfo(platformOne: false, platformTwo: false)
     var sandstormInfo: SandstormInfo = SandstormInfo(leftPlatform: false)
-    var startingObject: CycleInfo = CycleInfo(hatch: false, cargo: false, cargoShip: false, rocketShip: false, levelOne: false, levelTwo: false, levelThree: false, successful: false)
+    var startingObject: CycleInfo = CycleInfo(hatch: false, cargo: false, cargoShip: false, rocketShip: false, levelOne: false, levelTwo: false, levelThree: false, successful: false, time: 0)
+    //var startingObject: CycleInfo = CycleInfo(hatch: false, time: 0, cargo: false, cargoShip: false, rocketShip: false, levelOne: false, levelTwo: false, levelThree: false, successful: false)
     var endGameInfo: EndGameInfo = EndGameInfo(timeStopped: 0, robotTip: false, robotRecover: false)
     var capabilitiesInfo: CapabilitiesInfo = CapabilitiesInfo(cargoInCargoShip: false, cargoInRocketShip: false, hatchOnCargoShip: false, hatchOnRocketShip: false, climb: 0, speed: 0, driving: false)
     var submitInfo: SubmitInfo = SubmitInfo(matchNumber: "", scouterName: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         print(scoutingData.teamName)
         print(scoutingData.event)
         locationSegmented.addTarget(self, action: #selector(locationChange), for: UIControl.Event.valueChanged)
+        tap.cancelsTouchesInView = false 
         endGameTimeStoppedStepper.addTarget(self, action: #selector(StepperIncr), for: UIControl.Event.allTouchEvents)
     }
     
@@ -174,5 +178,9 @@ class MatchPreformanceTableViewController: UITableViewController {
         info.matchNumber = readyToSubmitTextFeilds[0].text!
         info.scouterName = readyToSubmitTextFeilds[1].text!
         return info
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

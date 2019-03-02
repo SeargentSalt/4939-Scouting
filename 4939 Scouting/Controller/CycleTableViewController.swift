@@ -27,7 +27,7 @@ class CycleTableViewController: UITableViewController {
     @IBOutlet var cycleSwitches: [UISwitch]!
     
     var stopWatch = Timer()
-    var currentCycleInfo: CycleInfo = CycleInfo(hatch: false, cargo: false, cargoShip: false, rocketShip: false, levelOne: false, levelTwo: false, levelThree: false, successful: false)
+    var currentCycleInfo: CycleInfo = CycleInfo(hatch: false, cargo: false, cargoShip: false, rocketShip: false, levelOne: false, levelTwo: false, levelThree: false, successful: false, time: 0)
     var scoutingData: ScoutingInfo = ScoutingInfo(event: "", teamName: "")
     var cycles: [CycleInfo] = []
     
@@ -41,6 +41,7 @@ class CycleTableViewController: UITableViewController {
     }
     
     func getCycleInfo(info: CycleInfo) -> CycleInfo {
+        info.time = Int(timerLabel.text!)!
         if(payloadTypeSegmented.selectedSegmentIndex == 0) {
             info.hatch = true
             

@@ -13,6 +13,10 @@ let currentVersionNumber = 1
 
 class ViewController: UIViewController {
     
+    @IBAction func unwindToFirstPage(_ sender: UIStoryboardSegue) {
+        
+    }
+    
     @IBAction func infoButton(_ sender: Any) {
         performSegue(withIdentifier: "DevInfo", sender: self)
     }
